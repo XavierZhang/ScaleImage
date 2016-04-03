@@ -1,0 +1,24 @@
+{
+  "name": "scale-image",
+  "version": "1.0.0",
+  "description": "This is a image scaler using Tinify API.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XavierZhang/ScaleImage.git"
+  },
+  "author": "Xavier Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XavierZhang/ScaleImage/issues"
+  },
+  "homepage": "https://github.com/XavierZhang/ScaleImage#readme",
+  "dependencies": {
+    "q": "^1.4.1",
+    "tinify": "^1.3.0"
+  }
+}
