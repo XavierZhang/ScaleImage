@@ -1,8 +1,18 @@
 "use strict";
 
-var Q = require('q');
-var fs = require('fs');
-var tinify = require("tinify");
-tinify.key = "RtXSfk17a8FHzHR05eu8bwSaIa0KspCy";
+// var sourcePath = ""
+// process.argv.splice(2).forEach((val, index, array) => {
+//   console.log(`${index}: ${val}`);
+// });
 
-var sourcePath = ""
+const args = process.argv.splice(2);
+const Tinify = require("./tinify");
+const GM = require("./gm");
+
+(function() {
+  let map = new Map();
+  map.set("tinify", new Tinify(args[1], args[2]));
+  map.set("gm", new GM(args[1], args[2]));
+
+  map.get(args[0]).resize();
+})();
